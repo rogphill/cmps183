@@ -1,0 +1,36 @@
+.colorful {
+  color: $clrHilight;
+}
+
+div.main_content {
+  padding: 20px;
+  button:focus {
+    // Please no silly leftover border.
+    border-color: white;
+    outline: none;
+  }
+
+  h1 {
+    color: $clrBlue;
+  }
+
+  div.cat_card {
+    div.descrtitle {
+      padding: 6px;
+      background-color: darken($clrBlue, 10%);
+      color: white;
+      font-size: 160%;
+      @include border-radius(8px);
+    }
+    img {
+      height: 16em;
+    }
+    .third {
+      border: 1px solid $clrLightGray;
+      padding: 2px;
+      margin: 4px;
+    }
+
+  }
+
+}
